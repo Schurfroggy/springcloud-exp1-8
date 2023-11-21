@@ -4,7 +4,7 @@ spring:   # 服务名称
   application:
     name: myshop-user
   datasource:
-    url: jdbc:mysql://8.134.129.167:3306/springcloud?characterEncoding=UTF8&useSSL=false
+    url: jdbc:mysql://0.0.0.0:3306/springcloud?characterEncoding=UTF8&useSSL=false
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: root
