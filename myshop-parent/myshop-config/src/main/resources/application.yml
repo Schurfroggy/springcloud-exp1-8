@@ -1,0 +1,38 @@
+server:
+  port: 12000
+spring:
+  application:
+    name: myshop-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/Schurfroggy/springcloud.git
+#spring:
+#  application:
+#    name: myshop-config
+#  profiles:
+#    active: subversion
+#  cloud:
+#    config:
+#      server:
+#        svn:
+#          uri: https://LAPTOP-DUGDQNSQ/svn/springcloud/
+#         username: Schurfroggy
+#          password: 7355608Fg_
+#          default-label: trunk
+#  rabbitmq:
+#    host: 8.134.129.167  # rabbitmq所在虚机地址
+#management: #暴露触发消息总线的地址
+#  endpoints:
+#    web:
+#      exposure:
+#        include: bus-refresh
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8888/eureka
+  instance:
+    prefer-ip-address: true
